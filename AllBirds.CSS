@@ -1,0 +1,1688 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Geograph';
+    src: url("Fonts/geographwebbold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Geograph light';
+    src: url("Fonts/geographweblight.ttf") format("truetype");
+}
+
+body {
+    width: 100vw;
+    height: 0vh;
+    overflow-x: hidden;
+    font-family: Geograph;
+    /* background-color: aqua; */
+    color: rgb(33, 42, 47);
+}
+
+.openMenu,
+.hideHamMenu {
+    display: none;
+}
+
+.displayHamMenu{
+    display: none;
+}
+button {
+    font-family: Geograph;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+.upper-nav {
+    width: 99vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}
+
+.gender {
+    width: 35vw;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.allgender {
+    width: 38vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listtype {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#sale{
+    color: brown;
+
+}
+.title {
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+}
+
+.title-logo {
+    padding-left: 3vw;
+    width: 22vw;
+    height: 6vh;
+}
+
+.allmenu {
+    margin-right: 2vw;
+    width: 42vw;
+    height: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu {
+    width: 38vw;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+}
+
+.main-body {
+    width: 100vw;
+    height: 30vw;
+}
+
+.background-img {
+    position: relative;
+}
+.shoeimg {
+    width: 100vw;
+    height: 50vw;
+}
+
+.body-title {
+    position: absolute;
+    bottom: 10vh;
+    color: white;
+    padding-left: 3vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.body-text {
+    font-size: 3.5em;
+}
+
+.body-text2 {
+    height: 6vh;
+    font-size: 1.2em;
+}
+
+.btnShop {
+    width: 26vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-men,
+.shop-women {
+    width: 12vw;
+    height: 8vh;
+    border: none;
+    color: rgb(33, 42, 47);
+    cursor: pointer;
+    letter-spacing: .1em;
+}
+.shop-men:hover,
+.shop-women:hover {
+    background-color: rgb(33, 42, 47);
+    color: white;
+}
+
+.pannel-1 {
+    width: 100vw;
+    height: 110vh;
+}
+
+.pannel-2 {
+    width: 100vw;
+    height: 30vh;
+}
+
+.fav {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoe-uses {
+    width: 100vw;
+    height: 5vh;
+}
+
+.shoe-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.uses {
+    margin-right:2vw;
+    cursor: pointer;
+    list-style: none;
+    letter-spacing: .1em;
+}
+
+.vertical-line {
+    margin-left: 5vw;
+    width: 88vw;
+    border: 1px solid black;
+}
+
+.leaf {
+    height: 30px;
+
+}
+
+.sneaker {
+    padding-left: 1vw;
+}
+
+.imgSpace {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+}
+
+.vl {
+    margin-top: 1vh;
+    width: 30vw;
+}
+
+.vertical-line2 {
+    width: 27vw;
+    border: 1px solid rgb(160, 157, 157);
+}
+
+/* text-after-hove */
+.runnerImages {
+    position: relative;
+}
+
+/* Child Text Container */
+.runnerImages h3 {
+    position: absolute;
+    top: 0;
+    left: 8vw;
+    background: white;
+    color: black;
+    text-align: center;
+    margin-top: 12vw;
+    font-family: Geograph;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.runnerImages:hover {
+    cursor: pointer;
+}
+
+.runnerImages:hover h3 {
+    width: 10vw;
+    padding: 3vh 2vw;
+    visibility: visible;
+    opacity: 10;
+}
+
+.treeContainer {
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.runnerImages {
+    height: 62vh;
+}
+
+.runner {
+    margin-left: 2vw;
+}
+
+.golf-container {
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.golf-img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.about-golf {
+    padding-top: 3vh;
+    width: 100vw;
+    /* height: 20vh; */
+}
+.pannel-5{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pannel-9 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.golf-title,
+.dibs-title {
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.golf-summary {
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+}
+
+.golf-gender {
+    width: 97vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.golf-men{
+    width: 15vw;
+    margin-right: 12px;
+}
+.golf-women {
+    width: 15vw;
+}
+
+.forMen,
+.forWomen {
+    cursor: pointer;
+    width: 15vw;
+    height: 8vh;
+    background-color: rgb(33, 42, 47);
+    color: white;
+    border: none;
+}
+.forMen:hover,
+.forWomen:hover {
+    background-color: white;
+    color: rgb(33, 42, 47);
+    border: 1px solid rgb(33, 42, 47);
+}
+
+.pannel-13 {
+    width: 100vw;
+    height: 60vh;
+    margin-left: 3vw;
+}
+
+.pannel-6 {
+    width: 80vw;
+    margin-left: 4vw;
+}
+
+.onSale {
+    width: 60vw;
+    height: 10vh;
+}
+
+.pannel-7 {
+    width: 99vw;
+    height: 95vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pannel-3 {
+    width: 97vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutSale {
+    background-color: white;
+    height: 15vh;
+    padding-left: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+}
+
+.blackShoe,
+.crocks,
+.greenShoe {
+    width: 28vw;
+    height: 62vh;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 24px;
+    transition: transform .5s ease;
+}
+.blackShoe:hover,
+.crocks:hover,
+.greenShoe:hover{
+    transform: scale(1.08);
+}
+
+.linkstyle {
+    letter-spacing: 2px;
+    color: rgb(33, 42, 47);
+    text-decoration: none;
+}
+
+.saleSpecial {
+    height: 62vh;
+    overflow: hidden;
+}
+
+.shoeExpense {
+    height: 48vh;
+}
+
+.WomenFlyer {
+    padding-top: 2vh;
+    height: 6vh;
+}
+
+.girlAddContainer {
+    height: 100vh;
+}
+
+.girldAdd {
+    width: 100vw;
+    height: 100vh;
+}
+
+.pannel-10 {
+    width: 100vw;
+    height: 10vh;
+}
+
+.onCollection {
+    width: 90vw;
+    height: 5vh;
+    margin-left: 5vw;
+}
+
+.shopCollection {
+    height: 80vh;
+    margin: 0 4vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collectionImages {
+    height: 45vh;
+    width: 29vw;
+    overflow: hidden;
+}
+
+.arrivalHead,
+.travelEssenstial,
+.warmHead {
+    height: 6vh;
+}
+
+.aboutArrivals,
+.aboutTravelEssenstial,
+.aboutWarm {
+    height: 12vh;
+}
+
+.collctionHead {
+    height: 3vh;
+}
+
+.shops {
+    padding-top: 2vh;
+    background-color: rgb(251, 251, 252);
+    width: 27vw;
+    height: 18vh;
+    padding-left: 1vw;
+}
+
+.brownShoe,
+.springShoe,
+.whiteShoe {
+    width: 28vw;
+    height: 45vh;
+    transition: transform .5s ease;
+}
+.brownShoe:hover,
+.springShoe:hover,
+.whiteShoe:hover{
+    transform: scale(1.1);
+}
+.pannel-12{
+    height: 107vh;
+}
+.elderOne {
+    width: 100vw;
+    height: 100vh;
+}
+.carbonContainer{   
+    padding-top: 3vh;
+    width: 100vw;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutSustanability {
+    height: 33vh;
+}
+.carbon-title{
+    text-align: center;
+    height: 12vh;
+}
+.aboutCarbon {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.strategyContainer {
+    display: flex;
+    justify-content: center;
+    width: 97vw;
+    height: 5vh;
+}
+
+.strategy {
+    cursor: pointer;
+    background-color: rgb(33, 42, 47);
+    color: white;
+    border: none;
+    width: 25vw;
+    height: 8vh;
+    letter-spacing: 1px;
+}
+.strategy:hover{
+    background-color: white;
+    color: rgb(33, 42, 47);
+    border: 1px solid rgb(33, 42, 47);
+}
+
+.pannel-13 {
+    width: 97vw;
+    height: 50vh;
+}
+
+.whiteLessShoe,
+.pinkShoe,
+.woolShoe {
+    width: 30vw;
+    height: 62vh;
+}
+
+.storiesImages {
+    height: 58vh;
+    overflow: hidden;
+}
+
+.multiShoe,
+.pureWhiteShoe,
+.flightStatus {
+    width: 28vw;
+    height: 58vh;
+    transition: transform .5s ease;
+}
+.multiShoe:hover,
+.pureWhiteShoe:hover,
+.flightStatus:hover
+{
+    transform: scale(1.1);
+}
+
+.storyHead {
+    height: 7vh;
+}
+
+.stories {
+    padding-top: 2vh;
+    background-color: rgb(251, 251, 252);
+    width: 27vw;
+    height: 20vh;
+    padding-left: 1vw;
+}
+
+.allBirdsRerunHeading,
+.onShotHeading,
+.flightHeading {
+    height: 8vh;
+}
+
+.aboutRerun,
+.aboutOnShot,
+.aboutFlight {
+    height: 16vh;
+    font-family: "Geograph light";
+    font-weight: 600;
+}
+
+.pannel-14 {
+    width: 15vw;
+    height: 10vh;
+}
+
+.onStory {
+    width: 10vw;
+    margin-left: 6vw;
+}
+
+.pannel-15 {
+    height: 95vh;
+    margin: 0 4vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.summary {
+    width: 26vw;
+}
+
+.pannel-16 {
+    height: 55vh;
+    background-color: rgb(248, 247, 245);
+}
+
+.aboutDibs {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Geograph light";
+}
+
+.signup {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailAddress {
+    width:45vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textField {
+    width: 32vw;
+    height: 7vh;
+    padding-left: 1vw;
+    border: none;
+}
+
+.sign {
+    cursor: pointer;
+    width: 10vw;
+    height: 7vh;
+    background-color: rgb(33, 42, 47);
+    color: white;
+    border: none;
+}
+
+.notes {
+    height: 5vh;
+}
+
+.policy {
+    color: rgb(33, 42, 47);
+}
+
+.upper-footer {
+    font-size: .8em;
+    font-family: 'Geograph light';
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(33, 42, 47);
+}
+
+.get-connect {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.connections {
+    width: 20vw;
+    height: 50vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#space {
+    height: 5vh;
+}
+
+.connection-heading,
+.connection-list {
+    color: rgb(248, 243, 243);
+    text-decoration: none;
+}
+.connection-heading{
+    font-family: Geograph;
+}
+
+.link {
+    color: white;
+}
+
+.head-title {
+    height: 8vh;
+}
+
+.customer-container {
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lower-footer {
+    font-size: .8em;
+    font-family: 'Geograph light';
+    width: 100vw;
+    height: 35vh;
+    background-color: rgb(33, 42, 47);
+    display: flex;
+}
+
+.flock {
+    width: 30vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-wrapper {
+    width: 20vw;
+}
+
+.flockText {
+    width: 20vw;
+    color: white;
+    height: 6vh;
+    font-family: Geograph;
+}
+
+.exclusiveOffers {
+    height: 10vh;
+    width: 18vw;
+    color: white;
+}
+
+.socialMedia {
+    width: 18vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.insta,
+.twitter,
+.facebook,
+.pinterest {
+    margin-right: 2vw;
+    height: 100%;
+}
+
+.certified {
+    width: 20vw;
+}
+
+.flags {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.certified {
+    height: 35vh;
+}
+
+.biconImg {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    width: 7vw;
+    height: 22vh;
+}
+
+.birds2022Policy {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(33, 42, 47);
+}
+
+.allRights,
+.terms {
+    width: 90vw;
+    text-align: center;
+    font-family: Geograph light;
+    font-size: .8em;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        width: 100vw;
+        height: 0vh;
+        overflow-x: hidden;
+        position: absolute;
+    }
+::-webkit-scrollbar-track{height: 0px;}
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: white;
+        overflow-y: hidden;
+    }
+    .title {
+        width: 100vw;
+    }
+    .title-logo{
+        margin-left: 20vw;
+    }
+    .gender,
+    .allmenu {
+        display: none;
+    }
+
+    .open {
+        width: 5vw;
+        height: 5vh;
+        margin-left: 3vw;
+        border: solid 0.5px;
+        border-radius: 5px;
+        background-color: #fbf6f2;
+    }
+
+    .openMenu {
+        height: 2vh;
+        padding-bottom: 3vh;
+        display: block;
+    }
+    ul #mm {
+        display: none;
+    }
+
+    .displayHamMenu {
+        padding-left: 10vw;
+        top: 7vh;
+        width: 20vw;
+        height: 33vh;
+        position: fixed;
+        bottom: 65vh;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: white;
+        transition: top 1s ease 0s;
+        list-style: none;
+
+    }
+
+    .hideHamMenu {
+        display: none;
+        position: absolute;
+        height: 30vh;
+    }
+
+    .openMenu {
+        display: block;
+    }
+    .hamburger-list {
+        width: 20vw;
+    }
+
+    .ham-list {
+        font-size: 1.4em;
+        width: 6vw;
+        list-style: none;
+        color: rgb(33, 42, 47);
+        text-decoration: none;
+    }
+
+
+    .upper-nav {
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .5em;
+    }
+
+    .pannel-1 {
+        height: 85vh;
+    }
+
+    .shoeimg {
+        height: 80vh;
+    }
+
+    .body-title {
+        font-size: .8em;
+        height: 25vh;
+    }
+    .btnShop {
+        width: 32vw;
+    }
+    .shop-men,
+    .shop-women {
+        width: 15vw;
+        height: 7vh;
+    }
+    .vertical-line {
+        width: 90vw;
+    }
+    
+    .pannel-2 {
+        height: 25vh;
+    }
+    .pannel-3 {
+        width: 98vw;
+        height: 70vh;
+    }
+
+    .runnerImages {
+        height: 45vh;
+    }
+
+    /* Child Text Container */
+    .runnerImages h3 {
+        left: 4vw;
+        margin-top: 15vw;
+    }
+
+    .runnerImages:hover h3 {
+        width: 18vw;
+    }
+
+    .runner {
+        margin-left: 2vw;
+    }
+
+    .runnerHead {
+        padding-top: 2vh;
+        height: 6vh;
+    }
+
+    .sneaker {
+        font-size: .8em;
+    }
+
+    .pannel-5 {
+        height: 50vh;
+    }
+
+    .treeContainer {
+        width: 28vw;
+        height: 75vh;
+    }
+    .whiteLessShoe,
+    .pinkShoe,
+    .woolShoe {
+        width: 30vw;
+        height: 50vh;
+    }
+
+    .stories {
+        font-size: .7em;
+        width: 28vw;
+    }
+
+    .saleSpecial {
+        height: 45vh;
+    }
+
+    .golf-img {
+        width: 100vw;
+        height: 65vh;
+    }
+    .pannel-7 {
+        width: 100vw;
+        height: 75vh;
+    }
+    .saleFlyer {
+        height: 45vh;
+    }
+    .blackShoe,
+    .crocks,
+    .greenShoe {
+        width: 30vw;
+        height: 45vh;
+    }
+
+    .pannel-6 {
+        margin-left: 2vw;
+    }
+
+    .WomenFlyer {
+        font-size: 1.2em;
+    }
+
+    .price {
+        font-size: .9em;
+    }
+
+    .girlAddContainer {
+        height: 70vh;
+    }
+
+    .girldAdd {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .pannel-9 {
+        height:50vh;
+    }
+
+    .pannel-12 {
+        height: 70vh;
+    }
+
+    .elderOne {
+        height: 65vh;
+        width: 100vw;
+    }
+
+    .pannel-13 {
+        height: 50vh;
+    }
+    .onStory {
+        margin-left: 5vw;
+    }
+    .pannel-15 {
+        height: 80vh;
+    }
+
+    .strategy {
+        width: 35vw;
+        font-size: .7em;
+    }
+
+    .pannel-10 {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .onSale {
+        width: 70vw;
+        margin-left: 1vw;
+    }
+    .collectionContainer{
+        height: 65vh;
+    }
+    .brownShoe,
+    .springShoe,
+    .whiteShoe {
+        width: 30vw;
+        height: 45vh;
+    }
+    .shopCollection {
+        width: 92vw;
+        height: 70vh;
+    }
+
+    .shops {
+        width: 28vw;
+    }
+
+    .arrivalHead,
+    .travelEssenstial,
+    .warmHead {
+        height: 8vh;
+        font-size: 1em;
+    }
+
+    .aboutArrivals,
+    .aboutTravelEssenstial,
+    .aboutWarm {
+        font-size: .7em;
+    }
+
+    .collctionHead {
+        height: 3vh;
+    }
+
+    .collectionImages {
+        height: 35vh;
+    }
+
+    .aboutSustanability {
+        height: 30vh;
+    }
+
+    .about-golf {
+        height: 35vh;
+    }
+
+    .aboutCarbon {
+        font-size: .8em;
+        height: 10vh;
+        width: 95vw;
+    }
+    .storyContainer{
+        height: 63vh;
+    }
+    .multiShoe,
+    .pureWhiteShoe,
+    .flightStatus {
+        width: 29vw;
+        height: 40vh;
+    }
+
+    .storyHead {
+        height: 7vh;
+    }
+
+    .storiesImages {
+        height: 40vh;
+    }
+
+    .aboutDibs {
+        font-size: .8em;
+        width: 90vw;
+        margin-left: 3vw;
+    }
+    .emailAddress {
+        height: 12vh;
+    }
+    .notes {
+        font-size: .9em;
+    }
+
+    .upper-footer {
+        font-size: .7em;
+        height: 180vh;
+    }
+
+    .get-connect {
+        width: 100vw;
+        height: 180vh;
+    }
+
+    .connections {
+        width: 60vw;
+    }
+
+    .customer-container {
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .helpSection {
+        height: 45vh;
+    }
+
+    .connection-heading {
+        font-size: 1.3em;
+    }
+
+    .lower-footer {
+        font-size: .8em;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flock {
+        width: 100vw;
+    }
+
+    .flockText {
+        height: 8vh;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .followFlock {
+        width: 97vw;
+    }
+
+    .text-wrapper {
+        width: 100vw;
+    }
+
+    .exclusive {
+        height: 6vh;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .exclusiveOffers {
+        width: 100vw;
+    }
+
+    .socialMedia {
+        height: 13vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .mediaIcon {
+        width: 8vw;
+    }
+
+    .flags {
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .certified {
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .biconImg {
+        width: 10vw;
+        height: 20vh;
+    }
+
+    .birds2022Policy {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .allRights,
+    .terms {
+        color: white;
+    }
+}
+
+@media screen and (max-width:425px) {
+    body {
+        width: 100vw;
+        height: 0vh;
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .gender,
+    .allmenu {
+        display: none;
+    }
+
+    .open {
+        width: 8vw;
+        height: 5vh;
+        margin-left: 3vw;
+        /* padding-top: px; */
+        border: solid 0.5px;
+        border-radius: 5px;
+        background-color: #fbf6f2;
+    }
+
+    .upper-nav {
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .3em;
+    }
+
+    .pannel-1 {
+        height: 65vh;
+    }
+
+    .pannel-3 {
+        height: 230vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Child Text Container */
+    .runnerImages h3 {
+        left: 15vw;
+        margin-top: 30vw;
+    }
+
+    .runnerImages:hover h3 {
+        width: 45vw;
+    }
+
+    .treeContainer {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .runnerImages {
+        height: 50vh;
+    }
+
+    .whiteLessShoe,
+    .pinkShoe,
+    .woolShoe {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .runnerHead {
+        width: 80vw;
+    }
+
+    .vertical-line2 {
+        width: 75vw;
+    }
+
+    .golf-container {
+        width: 100vw;
+        height: 48vh;
+    }
+
+    .golf-img {
+        width: 100vw;
+        height: 45vh;
+    }
+    
+    .golf-summary {
+        width: 96vw;
+        height: 11vh;
+        font-size: .9em;
+        text-align: center;
+        
+    }
+
+    .golf-men,
+    .golf-women {
+        width: 38vw;
+    }
+
+    .golf-gender {
+        width: 100vw;
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+
+    .forMen,
+    .forWomen {
+        width: 35vw;
+    }
+    .onSale{height: 5vh;}
+    .pannel-7 {
+        width: 100vw;
+        height: 240vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .saleFlyer {
+        height: 62vh;
+    }
+    .saleSpecial {
+        height: 48vh;
+    }
+    .aboutSale {
+        height: 15vh;
+    }
+    .pannel-6 {
+        width: 30vw;
+        height: 10vh;
+        margin-left: 10vw;
+    }
+    .blackShoe,
+    .crocks,
+    .greenShoe {
+        width: 80vw;
+        height: 55vh;
+    }
+
+    .shoeimg {
+        width: 100vw;
+        height: 56vh;
+    }
+
+    .body-title {
+        width: 95vw;
+        height: 20vh;
+    }
+
+    .body-text {
+        font-size: 1.8em;
+        height: 5vh;
+    }
+
+    .body-text2 {
+        font-size: 1em;
+        height: 4vh;
+    }
+
+    .btnShop {
+        width: 62vw;
+        height: 2vh;
+    }
+
+    .shop-men,
+    .shop-women {
+        width: 30vw;
+        height: 8vh;
+        font-size: .9em;
+    }
+    .shoe-types {
+        font-size: .8em;
+    }
+    .girlAddContainer {
+        height: 50vh;
+    }
+
+    .girldAdd {
+        width: 100vw;
+        height: 45vh;
+    }
+    .onCollection {
+        margin-left: 15vw;
+    }
+    .shopCollection {
+        height: 260vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .collectionImages {
+        height: 48vh;
+        width: 96vw;
+    }
+
+    .arrivalHead,
+    .travelEssenstial,
+    .warmHead {
+        font-size: 1.2em;
+    }
+
+    .aboutArrivals,
+    .aboutTravelEssenstial,
+    .aboutWarm {
+        font-size: .8em;
+    }
+
+    .collectionContainer {
+        width: 88vw;
+    }
+
+    .shops {
+        width: 87vw;
+        height: 18vh;
+    }
+    .onCollection {
+        width: 75vw;
+        margin-left: 5vw;
+    }
+
+    .brownShoe,
+    .springShoe,
+    .whiteShoe {
+        width: 88vw;
+        height: 48vh;
+    }
+    .pannel-9{
+        height:50vh;
+    }
+    .pannel-10 {
+        width: 97vw;
+        height: 1vh;
+    }
+
+    .pannel-12 {
+        height: 55vh;
+    }
+
+    .elderOne {
+        width: 100vw;
+        height: 50vh;
+    }
+    .carbon-title{
+        width: 89vw;
+        height: 12vh;
+        font-size: 1.6em;
+    }
+    .aboutCarbon {
+        width: 90vw;
+        height: 12vh;
+        font-size: .8em;
+    }
+    .pannel-13 {
+        height: 55vh;
+    }
+    .carbonContainer{   
+        width: 100vw;
+        height: 36vh;
+    }
+    .golf-title {
+        font-size: 1.2em;
+        height: 14vh;
+    }
+
+    .aboutSustanability {
+        width: 95vw;
+        height: 37vh;
+        font-size: .9em;
+    }
+    .onStory {
+        margin-left: 7vw;
+    }
+    .strategy {
+        width: 70vw;
+    }
+
+    .pannel-15 {
+        height: 260vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .storyContainer {
+        height: 80vh;
+    }
+
+    .storiesImages {
+        height: 50vh;
+    }
+
+    .multiShoe,
+    .pureWhiteShoe,
+    .flightStatus {
+        width: 85vw;
+        height: 50vh;
+    }
+
+    .storyHead {
+        height: 7vh;
+    }
+
+    .stories {
+        padding-top: 2vh;
+        background-color: rgb(251, 251, 252);
+        width: 84vw;
+        height: 20vh;
+        padding-left: 1vw;
+    }
+
+    .allBirdsRerunHeading,
+    .onShotHeading,
+    .flightHeading {
+        height: 8vh;
+    }
+
+    .aboutRerun,
+    .aboutOnShot,
+    .aboutFlight {
+        font-size: 1.2em;
+        height: 16vh;
+        width: 80vw;
+    }
+
+    .pannel-16 {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .aboutDibs {
+        font-size: .8em;
+        width: 95vw;
+        height: 14vh;
+    }
+
+    .emailAddress {
+        width: 70vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textField {
+        width: 70vw;
+    }
+    .sign-div{
+        height: 12vh;
+    }
+    .sign {
+        width: 71vw;
+        height: 7vh;
+    }
+
+    .notes {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .note {
+        text-align: center;
+        font-size: .8em;
+        width: 98vw;
+    }
+
+    .uses {
+        font-size: .8em;
+    }
+    .flock {
+        width: 100vw;
+        height: 28vh;
+    }
+    .socialMedia {
+        height: 15vh;
+        width: 25vw;
+    }
+    .biconImg {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        width: 22vw;
+        height: 22vh;
+    }
+}
+
+@media screen and (max-width:320px) {
+    body{
+        /* overflow: hidden; */
+    }
+    .pannel-1 {
+        height: 58vh;
+    }
+    .body-title{
+        height: 17vh;
+    }
+    .body-text {
+        font-size: 1.5em;
+        height: 2vh;
+    }
+    .body-text2{
+        font-size: .9em;
+        height: 3vh;
+    }
+    .shoeimg{
+        height: 51vh;
+    }
+    .shop-men,
+    .shop-women {
+    width: 30vw;
+    height: 7vh;
+    }
+    .golf-summary {
+    margin-left: 4vw;
+    width: 93vw;
+    }
+    .strategy {
+        margin-right: 5vw;
+        width: 75vw;
+    }
+    .notes {
+        font-size: .9em;
+        width: 98vw;
+    }
+    .flags {
+        width: 100vw;
+    }
+    .upper-footer{
+        width: 100vw;
+    }
+}
